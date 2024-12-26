@@ -13,6 +13,11 @@ xdotool type '"'
 xdotool key return
 cat answer.txt | xclip -selection clipboard
 
+#wait
+while [[ ! -s answer.txt ]]; do
+	sleep 1
+done
+
 #send
 xdotool key super+2
 xdotool key ctrl+v
