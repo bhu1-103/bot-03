@@ -1,7 +1,6 @@
 #!/usr/bin/zsh
 
 #get
-rm answer.txt
 xdotool key super+2
 xdotool mousemove 1100 1250
 xdotool click --repeat 3 --delay 200 1
